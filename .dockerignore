@@ -1,0 +1,11 @@
+**/bin/
+**/obj/
+.git/
+.vs/
+.vscode/
+tests/
+RanaMedia.Frontend/
+src/RanaMedia.Presentation/Logs/
+*.user
+*.suo
+*.jpeg

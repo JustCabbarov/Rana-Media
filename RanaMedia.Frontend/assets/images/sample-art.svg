@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <linearGradient id="bgArt" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eef6ea"/>
+      <stop offset="100%" stop-color="#c7dfc0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bgArt)"/>
+  <!-- Cubist modernist composition (green tones) -->
+  <polygon points="0,0 740,0 520,900 0,900" fill="#4a6b22" opacity="0.22"/>
+  <polygon points="880,0 1600,0 1600,560 720,420" fill="#115e59" opacity="0.86"/>
+  <circle cx="480" cy="370" r="240" fill="#4a6b22"/>
+  <path d="M480,130 A240,240 0 0 1 720,370 L480,370 Z" fill="#2e8b57" opacity="0.85"/>
+  <rect x="640" y="210" width="380" height="490" fill="#f3f9f4" opacity="0.9"/>
+  <polygon points="640,700 1020,210 1020,700" fill="#182c20" opacity="0.9"/>
+  <circle cx="1160" cy="610" r="190" fill="#4a6b22" opacity="0.88"/>
+  <rect x="260" y="520" width="440" height="230" fill="#0f5c43" opacity="0.85"/>
+  <!-- Architectural forest graphic lines -->
+  <g stroke="#0c1f14" stroke-width="3" fill="none">
+    <rect x="190" y="100" width="1220" height="700" stroke-opacity="0.22"/>
+    <line x1="480" y1="70" x2="480" y2="830" stroke-opacity="0.35"/>
+    <circle cx="830" cy="450" r="135" stroke="#14532d" stroke-width="4"/>
+  </g>
+</svg>

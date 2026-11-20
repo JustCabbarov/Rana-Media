@@ -1,0 +1,21 @@
+# .NET / Visual Studio
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+publish/
+
+# Logs & runtime uploads
+Logs/
+*.log
+src/RanaMedia.Presentation/wwwroot/uploads/
+
+# Node / OS / Editor
+node_modules/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp

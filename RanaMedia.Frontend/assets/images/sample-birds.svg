@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <linearGradient id="skyBirds" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#062624"/>
+      <stop offset="55%" stop-color="#115e59"/>
+      <stop offset="100%" stop-color="#2d8a7e"/>
+    </linearGradient>
+    <radialGradient id="sunBirds" cx="62%" cy="46%" r="36%">
+      <stop offset="0%" stop-color="#d8f5e5" stop-opacity="0.92"/>
+      <stop offset="45%" stop-color="#86d1b6" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#115e59" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#skyBirds)"/>
+  <rect width="1600" height="900" fill="url(#sunBirds)"/>
+  <!-- Acoustic harmonic waves -->
+  <g fill="none" stroke="#eef6f0" stroke-opacity="0.28">
+    <circle cx="992" cy="414" r="130" stroke-width="1.5"/>
+    <circle cx="992" cy="414" r="210" stroke-width="1.2" stroke-dasharray="6 8"/>
+    <circle cx="992" cy="414" r="300" stroke-width="1"/>
+    <circle cx="992" cy="414" r="405" stroke-width="0.9" stroke-dasharray="3 10"/>
+  </g>
+  <path d="M0,620 C240,560 400,690 650,610 C900,530 1120,665 1380,585 C1480,555 1550,570 1600,585" fill="none" stroke="#c4f0e4" stroke-opacity="0.32" stroke-width="2"/>
+  <path d="M0,655 C280,595 450,715 710,635 C970,555 1170,690 1420,615 C1500,590 1560,605 1600,615" fill="none" stroke="#d8f5e5" stroke-opacity="0.28" stroke-width="1.5"/>
+  <!-- Sweeping dark botanical branch -->
+  <path d="M120,900 C320,760 540,620 820,560 C1020,515 1190,480 1410,435" fill="none" stroke="#071f1c" stroke-width="16" stroke-linecap="round"/>
+  <path d="M520,650 C600,570 690,520 790,490" fill="none" stroke="#071f1c" stroke-width="8" stroke-linecap="round"/>
+  <path d="M1040,510 C1140,555 1230,575 1330,560" fill="none" stroke="#071f1c" stroke-width="7" stroke-linecap="round"/>
+  <!-- Stylized leaves -->
+  <g fill="#0a2926">
+    <ellipse cx="480" cy="605" rx="34" ry="12" transform="rotate(-32 480 605)"/>
+    <ellipse cx="645" cy="532" rx="38" ry="13" transform="rotate(-24 645 532)"/>
+    <ellipse cx="1210" cy="542" rx="32" ry="11" transform="rotate(18 1210 542)"/>
+    <ellipse cx="1340" cy="430" rx="30" ry="10" transform="rotate(-18 1340 430)"/>
+  </g>
+  <!-- Songbird perched singing toward harmonic field -->
+  <g transform="translate(880, 315)" fill="#061816">
+    <path d="M75,180 C55,140 60,92 88,65 C106,48 128,44 146,52 L176,42 L152,68 C157,86 154,114 136,138 C118,162 96,174 75,180 Z"/>
+    <path d="M78,165 L12,218 L24,228 L86,178 Z"/>
+    <line x1="92" y1="176" x2="88" y2="225" stroke="#061816" stroke-width="5" stroke-linecap="round"/>
+    <line x1="110" y1="170" x2="108" y2="222" stroke="#061816" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="132" cy="64" r="3" fill="#eef6f0"/>
+  </g>
+  <!-- Soft foreground vignette -->
+  <rect y="830" width="1600" height="70" fill="#06201c" opacity="0.45"/>
+</svg>

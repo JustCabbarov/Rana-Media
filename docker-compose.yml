@@ -1,0 +1,51 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: ranamedia-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: rana_media_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Reporting123@
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d rana_media_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  backend:
+    build:
+      context: .
+      dockerfile: src/RanaMedia.Presentation/Dockerfile
+    container_name: ranamedia-backend
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:8080
+      ConnectionStrings__PostgreSqlConnection: "Host=postgres;Port=5432;Database=rana_media_db;Username=postgres;Password=Reporting123@"
+    ports:
+      - "5000:8080"
+    volumes:
+      - uploads_data:/app/wwwroot/uploads
+
+  frontend:
+    build:
+      context: ./RanaMedia.Frontend
+      dockerfile: Dockerfile
+    container_name: ranamedia-frontend
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - "3000:80"
+
+volumes:
+  postgres_data:
+  uploads_data:

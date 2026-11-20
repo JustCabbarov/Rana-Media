@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <linearGradient id="skyCosmos" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#071f19"/>
+      <stop offset="48%" stop-color="#0f5c43"/>
+      <stop offset="82%" stop-color="#1f7a5c"/>
+      <stop offset="100%" stop-color="#8dc2ae"/>
+    </linearGradient>
+    <linearGradient id="waterCosmos" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#134d39"/>
+      <stop offset="100%" stop-color="#061a14"/>
+    </linearGradient>
+    <radialGradient id="haloCosmos" cx="50%" cy="46%" r="42%">
+      <stop offset="0%" stop-color="#d6f0e6" stop-opacity="0.55"/>
+      <stop offset="55%" stop-color="#54ab8b" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#071f19" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="iceLight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eaf5ef"/>
+      <stop offset="60%" stop-color="#9ccdb8"/>
+      <stop offset="100%" stop-color="#2c6b53"/>
+    </linearGradient>
+    <linearGradient id="iceShadow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#144734"/>
+      <stop offset="100%" stop-color="#072118"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#skyCosmos)"/>
+  <rect width="1600" height="900" fill="url(#haloCosmos)"/>
+  <circle cx="800" cy="405" r="245" fill="none" stroke="#cfece0" stroke-opacity="0.22" stroke-width="1.5"/>
+  <circle cx="800" cy="405" r="320" fill="none" stroke="#cfece0" stroke-opacity="0.1" stroke-dasharray="4 10" stroke-width="1.2"/>
+  <g opacity="0.55" fill="#e6f5ee">
+    <circle cx="290" cy="145" r="1.6"/><circle cx="430" cy="95" r="1.2"/><circle cx="620" cy="120" r="1.8"/>
+    <circle cx="990" cy="110" r="1.4"/><circle cx="1180" cy="155" r="1.7"/><circle cx="1360" cy="92" r="1.2"/>
+    <circle cx="210" cy="280" r="1.2"/><circle cx="1420" cy="240" r="1.6"/>
+  </g>
+  <!-- Distant emerald mountain ridges -->
+  <polygon points="80,580 280,360 450,580" fill="#124030" opacity="0.85"/>
+  <polygon points="280,360 330,430 450,580 375,580" fill="#59967d" opacity="0.4"/>
+  <polygon points="1080,580 1280,330 1510,580" fill="#124030" opacity="0.85"/>
+  <polygon points="1280,330 1210,440 1080,580 1165,580" fill="#68ab8f" opacity="0.35"/>
+  <!-- Central monumental emerald monolith -->
+  <polygon points="560,580 770,185 835,235 925,165 1060,580" fill="url(#iceShadow)"/>
+  <polygon points="560,580 770,185 785,430 680,580" fill="url(#iceLight)" opacity="0.9"/>
+  <polygon points="925,165 865,360 980,580 1060,580" fill="#bfeadd" opacity="0.48"/>
+  <polygon points="770,185 835,235 865,360 785,430" fill="#23664f" opacity="0.85"/>
+  <!-- Horizon line & calm mirrored sea -->
+  <rect y="580" width="1600" height="320" fill="url(#waterCosmos)"/>
+  <line x1="0" y1="580" x2="1600" y2="580" stroke="#bfeadd" stroke-opacity="0.45" stroke-width="1.5"/>
+  <!-- Mirror reflection -->
+  <polygon points="560,582 770,845 835,810 925,865 1060,582" fill="#84bfa8" opacity="0.16"/>
+  <polygon points="620,582 775,785 855,582" fill="#d8efe5" opacity="0.12"/>
+  <g stroke="#cfece0" stroke-opacity="0.24" stroke-width="1.2">
+    <line x1="650" y1="620" x2="950" y2="620"/>
+    <line x1="700" y1="660" x2="900" y2="660"/>
+    <line x1="730" y1="705" x2="870" y2="705"/>
+    <line x1="760" y1="750" x2="840" y2="750"/>
+  </g>
+</svg>
